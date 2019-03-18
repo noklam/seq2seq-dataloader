@@ -14,7 +14,7 @@ def build_word2id(seq_path, min_word_count):
     Returns:
         word2id: Dictionary; word-to-id dictionary
     """
-    sequences = open(seq_path).readlines()
+    sequences = open(seq_path, encoding='utf8').readlines()
     num_seqs = len(sequences)
     counter = Counter()
     
